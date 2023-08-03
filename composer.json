@@ -1,0 +1,29 @@
+{
+  "name": "pavlo-dot-dev/puppeteer-php",
+  "description": "Puppeteer PHP Library",
+  "homepage": "https://github.com/pavlo-dot-dev/puppeteer-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "PAVLO POPOV",
+      "email": "info@pavlo.dev"
+    }
+  ],
+  "keywords": [
+    "pavlodotdev",
+    "puppeteer",
+    "parsing",
+    "scraper"
+  ],
+  "require": {
+    "php": "^8.1",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PavloDotDev\\PuppeteerPhp\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
