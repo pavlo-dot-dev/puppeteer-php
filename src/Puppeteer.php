@@ -13,14 +13,14 @@ class Puppeteer
 
     public function openPage(string $url): Page
     {
-        $data = $this->request('/page', compact('url'));
+        $data = $this->request('/puppeteer/page', compact('url'));
 
         return Page::fromArray($data, $this);
     }
 
     public function getPage(string $id): Page
     {
-        $data = $this->request('/page/'.$id);
+        $data = $this->request('/puppeteer/page/'.$id);
 
         return Page::fromArray($data, $this);
     }

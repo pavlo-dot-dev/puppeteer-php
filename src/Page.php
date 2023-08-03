@@ -52,13 +52,13 @@ class Page
 
     public function goto(string $url): Page
     {
-        $this->data = $this->puppeteer->request('/page/'.$this->id.'/goto', compact('url'));
+        $this->data = $this->puppeteer->request('/puppeteer/page/'.$this->id.'/goto', compact('url'));
 
         return $this;
     }
 
     public function close(): void
     {
-        $this->puppeteer->request('/page/'.$this->id.'/close');
+        $this->puppeteer->request('/puppeteer/page/'.$this->id.'/close');
     }
 }
