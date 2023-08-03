@@ -56,4 +56,9 @@ class Page
 
         return $this;
     }
+
+    public function close(): void
+    {
+        $this->puppeteer->request('/page/'.$this->id.'/close');
+    }
 }
